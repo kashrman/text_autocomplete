@@ -78,7 +78,6 @@ PREFIX: i am going
 LSTM +: to it in the time is of up one 3 we it is in work awww to work for
 GPT2 +: to be.”
 
-[image via Getty Images]
 ------------------------------------------------------------
 PREFIX: tomorrow i will
 LSTM +: the you i was from the morning good not was but it i and now i so he but i
