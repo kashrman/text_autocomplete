@@ -10,6 +10,9 @@ from lstm_train import train_lstm
 from eval_lstm import evaluate_rouge_3of4
 from eval_transformer_pipeline import evaluate_distilgpt2_pipeline_rouge_3of4
 
+# !!
+debug_test = True
+
 torch.manual_seed(42)
 
 # 1) Tokenizer
@@ -26,7 +29,6 @@ pad_id = tokenizer.pad_token_id or 0
 eos_id = tokenizer.eos_token_id
 
 # 2) Devices
-debug_test = True
 device = "cuda" if torch.cuda.is_available() else "cpu"
 pipeline_device = 0 if torch.cuda.is_available() else -1  # pipeline ждёт int/-1
 
