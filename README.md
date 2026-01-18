@@ -83,17 +83,19 @@ PREFIX: tomorrow i will
 LSTM +: the you i was from the morning good not was but it i and now i so he but i
 GPT2 +: keep this for the long term.
 But if you have any questions, then just write this:
+
 PREFIX: this movie is
 LSTM +: in the i was out i have i don t am was to the and of s day no i
 GPT2 +: a pretty good one as I haven't heard much about it before.) I'm very impressed with this
+
 PREFIX: Company Google is
 LSTM +: it is my now it is too it be good day is so i miss you could feel i think
 GPT2 +: making changes to its search engine and search engine to replace its search engine for the Google Search engine and
+
 PREFIX: If you compare Google and Yandex, you could say that
 LSTM +: of my bad at work not have to get to this in twitter i would it 2 all back to
 GPT2 +: Yandex uses the same techniques as Google, which relies on artificial intelligence to make the pages for
-PREFIX: Our mentor is very smart and
-...
+
 PREFIX: I would like
 LSTM +: for the time on for in the that to the i t go too me it s the i would
 GPT2 +: to thank Mr. B. Kallerman for his thoughtful work, particularly his outstanding contributions, the
