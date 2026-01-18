@@ -46,33 +46,30 @@ text-autocomplete/
 #########################
 Epoch 1/5 [train]: 100%|██████████| 63/63 [05:16<00:00, 5.02s/it]
 Epoch 1/5 [val]: 100%|██████████| 8/8 [00:14<00:00, 1.87s/it]
-Epoch 1: Train Loss=8.7930, Val Loss=7.3892, ROUGE1-F=0.0478, ROUGE2-F=0.0000 (n=1920)
-Saved best checkpoint to: models\lstm_best.pt (val_loss=7.3892)
+Epoch 1: Train Loss=8.7930, Val Loss=7.3892, ROUGE1-F=0.0478, ROUGE2-F=0.0000 (n=1920) 
 
 Epoch 2/5 [train]: 100%|██████████| 63/63 [05:25<00:00, 5.16s/it]
 Epoch 2/5 [val]: 100%|██████████| 8/8 [00:15<00:00, 1.92s/it]
 
-Epoch 2: Train Loss=7.2491, Val Loss=7.2348, ROUGE1-F=0.0267, ROUGE2-F=0.0033 (n=1920)
-Saved best checkpoint to: models\lstm_best.pt (val_loss=7.2348)
+Epoch 2: Train Loss=7.2491, Val Loss=7.2348, ROUGE1-F=0.0267, ROUGE2-F=0.0033 (n=1920) 
 
 Epoch 3/5 [train]: 100%|██████████| 63/63 [05:05<00:00, 4.85s/it]
 Epoch 3/5 [val]: 100%|██████████| 8/8 [00:14<00:00, 1.86s/it]
 
-Epoch 3: Train Loss=7.0847, Val Loss=7.0943, ROUGE1-F=0.0332, ROUGE2-F=0.0036 (n=1920)
-Saved best checkpoint to: models\lstm_best.pt (val_loss=7.0943)
+Epoch 3: Train Loss=7.0847, Val Loss=7.0943, ROUGE1-F=0.0332, ROUGE2-F=0.0036 (n=1920) 
 
 Epoch 4/5 [train]: 100%|██████████| 63/63 [05:03<00:00, 4.81s/it]
 Epoch 4/5 [val]: 100%|██████████| 8/8 [00:15<00:00, 1.96s/it]
 
-Epoch 4: Train Loss=6.9298, Val Loss=6.9561, ROUGE1-F=0.0649, ROUGE2-F=0.0050 (n=1920)
-Saved best checkpoint to: models\lstm_best.pt (val_loss=6.9561)
+Epoch 4: Train Loss=6.9298, Val Loss=6.9561, ROUGE1-F=0.0649, ROUGE2-F=0.0050 (n=1920) 
 
 Epoch 5/5 [train]: 100%|██████████| 63/63 [05:06<00:00, 4.86s/it]
 Epoch 5/5 [val]: 100%|██████████| 8/8 [00:14<00:00, 1.87s/it]
 
-Epoch 5: Train Loss=6.7795, Val Loss=6.8307, ROUGE1-F=0.0673, ROUGE2-F=0.0053 (n=1920)
-Saved best checkpoint to: models\lstm_best.pt (val_loss=6.8307)
+Epoch 5: Train Loss=6.7795, Val Loss=6.8307, ROUGE1-F=0.0673, ROUGE2-F=0.0053 (n=1920) 
+
 LSTM VAL: {'rouge1_f': 0.06725882760349697, 'rouge2_f': 0.005282486610611611, 'n_samples': 1920}
+
 GPT2 VAL: {'rouge1_f': 0.06550649469167424, 'rouge2_f': 0.006085652538621535, 'n_samples': 1903}
 
 PREFIX: i am going
