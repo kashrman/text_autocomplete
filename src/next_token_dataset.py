@@ -57,11 +57,11 @@ def GenDataLoaders(train_df, val_df, test_df, tokenizer):
     val_ds   = NextTokenDataset(val_ids,   eos_id=eos_id)
     test_ds  = NextTokenDataset(test_ids,  eos_id=eos_id)
 
-    train_loader = DataLoader(train_ds, batch_size=64, shuffle=True,
+    train_loader = DataLoader(train_ds, batch_size=512, shuffle=True,
                             collate_fn=lambda b: collate_fn(b, pad_id=pad_id))
-    val_loader   = DataLoader(val_ds, batch_size=64, shuffle=False,
+    val_loader   = DataLoader(val_ds, batch_size=512, shuffle=False,
                             collate_fn=lambda b: collate_fn(b, pad_id=pad_id))
-    test_loader  = DataLoader(test_ds, batch_size=64, shuffle=False,
+    test_loader  = DataLoader(test_ds, batch_size=512, shuffle=False,
                             collate_fn=lambda b: collate_fn(b, pad_id=pad_id))
     
     return train_loader, val_loader, test_loader 

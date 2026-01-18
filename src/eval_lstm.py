@@ -30,7 +30,7 @@ def evaluate_rouge_3of4(
     Генерируем продолжение для prefix и считаем ROUGE между generated_suffix и target.
     """
     model.eval()
-    scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2"], use_stemmer=True)  # [web:6]
+    scorer = rouge_scorer.RougeScorer(["rouge1", "rouge2"], use_stemmer=True)
 
     total_r1, total_r2, n = 0.0, 0.0, 0
 
@@ -82,7 +82,7 @@ def evaluate_rouge_3of4(
             if len(ref_text) == 0 or len(hyp_text) == 0:
                 continue
 
-            scores = scorer.score(ref_text, hyp_text)  # [web:6]
+            scores = scorer.score(ref_text, hyp_text)
             total_r1 += scores["rouge1"].fmeasure
             total_r2 += scores["rouge2"].fmeasure
             n += 1

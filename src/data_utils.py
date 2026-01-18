@@ -87,9 +87,9 @@ def prepare_all_data(force: bool = False, debug_test: bool = False):
         print("Create cleared data file")
         df = clear_datatset()
 
-        # Если отладка, то для теста оставить в наборе только первые 10000 строк
+        # Если отладка, то для теста оставить в наборе только первые 1000 строк
         if debug_test:
-            df = df.head(10000)
+            df = df.head(1000)
             print(f"First 5 texts:\n{df.head()}\ntotal length = {len(df)}\n")
 
         print("Split data files")

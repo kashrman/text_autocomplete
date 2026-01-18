@@ -29,8 +29,8 @@ def train_lstm(
 ):
     model.to(device)
 
-    # labels с паддингом -100, значит ignore_index=-100 [web:31]
-    loss_fn = nn.CrossEntropyLoss(ignore_index=-100)  # [web:31]
+    # labels с паддингом -100, значит ignore_index=-100
+    loss_fn = nn.CrossEntropyLoss(ignore_index=-100)
     optimizer = Adam(model.parameters(), lr=lr)
 
     best_val_loss = float("inf")
@@ -48,8 +48,8 @@ def train_lstm(
             optimizer.zero_grad()
 
             logits = model(inputs, lengths)            # [B,T,V]
-            # CrossEntropyLoss ждёт [N,C,*], поэтому делаем [B,V,T] [web:31]
-            loss = loss_fn(logits.transpose(1, 2), labels)  # [web:31]
+            # CrossEntropyLoss ждёт [N,C,*], поэтому делаем [B,V,T]
+            loss = loss_fn(logits.transpose(1, 2), labels)
             loss.backward()
 
             torch.nn.utils.clip_grad_norm_(model.parameters(), grad_clip)
@@ -69,7 +69,7 @@ def train_lstm(
                 labels = batch["labels"].to(device)
 
                 logits = model(inputs, lengths)
-                loss = loss_fn(logits.transpose(1, 2), labels)  # [web:31]
+                loss = loss_fn(logits.transpose(1, 2), labels)
                 total_val_loss += loss.item()
 
         avg_val_loss = total_val_loss / max(1, len(val_loader))
@@ -118,4 +118,3 @@ def train_lstm(
         model.load_state_dict(best_state)
 
     return model
-
