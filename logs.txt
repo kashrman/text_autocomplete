@@ -18,37 +18,37 @@ Epoch 8: Train Loss=4.9511, Val Loss=5.0779, ROUGE1-F=0.1071, ROUGE2-F=0.0222 (n
 LSTM VAL: {'rouge1_f': 0.10711065520183888, 'rouge2_f': 0.022228194860246516, 'n_samples': 154163}
 GPT2 VAL: {'rouge1_f': 0.05737843178123644, 'rouge2_f': 0.004854144314164569, 'n_samples': 152545}
 
-Примеры:
+Примеры (при max_new_tokens=5):
 
 PREFIX: i am going
-LSTM +: to miss my family i
-GPT2 +: to kill you all.
+LSTM +: to get to the beach
+GPT2 +: to find a way to
 
 PREFIX: tomorrow i will
-LSTM +: just sit with the little
-GPT2 +: give you an idea of
+LSTM +: be leaving tomorrow for finals
+GPT2 +: make this one an issue
 
 PREFIX: this movie is
-LSTM +: going to be a day
-GPT2 +: actually titled A Man''s
+LSTM +: for me for my last
+GPT2 +: about a young man who
 
 PREFIX: Company Google is
-LSTM +: well this morning really well
-GPT2 +: set to announce new technologies
+LSTM +: a kid with us i
+GPT2 +: in its third quarter,
 
 PREFIX: If you compare Google and Yandex, you could say that
-LSTM +: song and do lol x
-GPT2 +: the Android version of Google
+LSTM +: and we can t go
+GPT2 +: Google is the biggest influence
 
 PREFIX: Our mentor is very smart and
-LSTM +: i d have to talk
-GPT2 +: very smart. We can
+LSTM +: we can be here i
+GPT2 +: very passionate in his work
 
 PREFIX: The distilgpt2 model is very strange, but it allows
 ...
 PREFIX: I would like
-LSTM +: on a way to be
-GPT2 +: to thank our supporters and
+LSTM +: me 2 my family i
+GPT2 +: to thank the community for
 
 
 ####
